@@ -6,8 +6,7 @@
 // ── API ─────────────────────────────────────────────────────────────────────
 export const API_BASE_URL = 'https://www.googleapis.com/books/v1/volumes';
 export const PAGE_SIZE = 20;
-export const API_KEY = 'AIzaSyDjPVPvOj4as0-TtfMc2GRS8xD7-YtmCs4';
-
+const API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
 // ── Query builder ───────────────────────────────────────────────────────────
 export function buildQuery({ title, author, genre }) {
   const parts = [];
